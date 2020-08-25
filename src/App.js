@@ -8,20 +8,13 @@ import AnimeContainer from './Containers/AnimeContainer';
 
 class App extends React.Component {
 
-  state = { instructor: {} }
-
-  appClickHandler = (instructor_obj) => {
-    console.log("%c In App!", 'color: red', instructor_obj)
-    this.setState({ instructor: instructor_obj })
-  }
-
   render() {
 
     return (
       <>
         <Header />
-        <InstructorContainer appClickHandler={this.appClickHandler} />
-        <AnimeContainer instructor={this.state.instructor} />
+        <InstructorContainer />
+        <AnimeContainer />
       </>
     );
   }
