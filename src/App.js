@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+import './App.css';
 import Header from './Components/Header'
 import InstructorContainer from './Containers/InstructorContainer'
-import './App.css';
 import AnimeContainer from './Containers/AnimeContainer';
 
 
